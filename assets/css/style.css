@@ -9,6 +9,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+.header::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../images/elipses.svg');
+    
 }
 
 .header .photo {
