@@ -13,7 +13,7 @@
     --primary-color: #1aa9bc;
     --secondary-color: #3e5dc0;
     --light-color: #ecf0f1;
-    --dark-color: #2c3e50;
+    --dark-color: #3acac3a2;
     --text-color: #34495e;
     --font-family-primary: 'Poppins', sans-serif;
     --font-family-secondary: 'Roboto', sans-serif;
@@ -41,6 +41,8 @@ i {
     color: rgb(184, 97, 97);
     margin-right: 0.5rem;
 }
+
+
 
 /* Media Queries - Global */
 
