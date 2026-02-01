@@ -44,21 +44,52 @@
             </div>
 
         </header>
-        <section class="acordeon" id="idiomas">
 
-            <button type="button" class="trigger">Idiomas
-                <div class="arrow"><i class="bi bi-chevron-up"></i></div>
+        <!-- Languages -->
+
+        <section class="acordeon" id="skills">
+
+            <button type="button" class="trigger" data-id="skills-content">Skills
+                <div class="arrow" data-id="skills-content"><i class="bi bi-chevron-up"></i></div>
             </button>
-            <div class="content">
-                <ul>
-                    <li>Português</li>
-                    <li>Inglês - Básico</li>
-                    <li>Espanhol - Básico</li>
+            <div class="content" id="skills-content">
+                <h4>Habilidades Profissionais:</h4>
+                <ul class="skills-icons">
+                    <li><img width="40rem" src="assets/images/HTML.svg" alt=""></li>
+                    <li><img width="40rem" src="assets/images/CSS.svg" alt=""></li>
+                    <li><img class="icon-different" width="40rem" src="assets/images/JS.svg" alt=""></li>
+                    <li><img width="40rem" src="assets/images/NodeJS.svg" alt=""></li>
+                    <li><img width="40rem" src="assets/images/git.svg" alt=""></li>
+                    <li><img width="40rem" src="assets/images/github.svg" alt=""></li>
+
                 </ul>
+                <hr>
+                <h4 class="soft-skills-title">Habilidades Pessoais:</h4>
+                <div class="container">
+                    <ul class="soft-skills">
+                        <li><i class="bi bi-check"></i>Facilidade com tarefas práticas</li>
+                        <li><i class="bi bi-check"></i>Comunicação</li>
+                        <li><i class="bi bi-check"></i>Trabalho em equipe</li>
+                        <li><i class="bi bi-check"></i>Organização</li>
+                        <li><i class="bi bi-check"></i>Comprometimento com resultados</li>
+                    </ul>
+                </div>
             </div>
 
-
         </section>
+        <section class="acordeon" id="languages">
+
+            <button type="button" class="trigger" data-id="languages-content">Idiomas
+                <div class="arrow" data-id="languages-content"><i class="bi bi-chevron-up"></i></div>
+            </button>
+            <div class="content" id="languages-content">
+                <ul>
+                    <li><i class="bi bi-check"></i>Português</li>
+                    <li><i class="bi bi-check"></i>Inglês - Básico</li>
+                </ul>
+            </div>
+        </section>
+        <!-- /languages -->
     </div>
 
     <script src="assets/js/main.js"></script>
