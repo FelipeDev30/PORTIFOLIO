@@ -1,53 +1,151 @@
-/* Reset Page */
-
-* {
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: var(--font-family-primary);
-}
-
-/* Variables */
+/* =================================================================
+   CSS VARIABLES - Design Tokens
+   ================================================================= */
 
 :root {
-    --primary-color: #1aa9bc;
-    --secondary-color: #3e5dc0;
-    --light-color: #ecf0f1;
-    --dark-color: #3acac3a2;
-    --text-color: #34495e;
+    /* Colors */
+    --primary-color: #4f8cff;
+    --secondary-color: #7b61ff;
+    --light-color: #f6f7fb;
+    --dark-color: #0f172a;
+    --text-color: #e2e8f0;
+    --text-secondary: rgba(226, 232, 240, 0.9);
+    --link-color: #c7d2fe;
+    --link-hover: #a5b4fc;
+    --icon-color: #a5b4fc;
+    --white: #fff;
+    
+    /* Surfaces & Backgrounds */
+    --surface-color: rgba(15, 23, 42, 0.72);
+    --surface-dark: rgba(15, 23, 42, 0.7);
+    --bg-gradient-1: rgba(79, 140, 255, 0.25);
+    --bg-gradient-2: rgba(123, 97, 255, 0.18);
+    
+    /* Borders */
+    --border-color: rgba(148, 163, 184, 0.28);
+    --border-light: rgba(148, 163, 184, 0.25);
+    --border-lighter: rgba(148, 163, 184, 0.18);
+    --border-hr: rgba(148, 163, 184, 0.35);
+    
+    /* Shadows */
+    --shadow-lg: 0 20px 50px rgba(15, 23, 42, 0.45);
+    --shadow-md: 0 10px 30px rgba(15, 23, 42, 0.28);
+    
+    /* Typography */
     --font-family-primary: 'Poppins', sans-serif;
     --font-family-secondary: 'Roboto', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    
+    /* Border Radius */
+    --radius-sm: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1.25rem;
+    --radius-full: 50%;
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
 }
 
-/* Global Styles */
-body {
+/* =================================================================
+   RESET & BASE STYLES
+   ================================================================= */
 
-    background-image: linear-gradient(35deg, rgb(0, 0, 0),rgba(192, 84, 84, 0.637), rgba(61, 92, 231, 0.842), rgb(10, 10, 10));
-    background-color: rgb(0, 0, 253);
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-image: 
+        radial-gradient(circle at top, var(--bg-gradient-1), transparent 45%),
+        radial-gradient(circle at 15% 80%, var(--bg-gradient-2), transparent 50%),
+        linear-gradient(120deg, #0b1120, var(--dark-color) 40%, #1f2937 100%);
+    background-color: #0b1120;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    color: #fff;
-} 
+    color: var(--text-color);
+    font-family: var(--font-family-primary);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* =================================================================
+   LAYOUT - Main Container
+   ================================================================= */
 
 .main {
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid #ffffff;
-    border-radius: 1rem;
+    margin: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    background: var(--surface-color);
+    box-shadow: var(--shadow-lg);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
 }
+
+/* =================================================================
+   UTILITIES
+   ================================================================= */
 
 i {
-    color: rgb(184, 97, 97);
-    margin-right: 0.5rem;
+    color: var(--icon-color);
+    margin-right: var(--spacing-sm);
 }
 
+hr {
+    border: 0;
+    border-top: 0.5px solid var(--border-hr);
+    opacity: 0.4;
+    margin: var(--spacing-md) 0;
+}
 
-
-/* Media Queries - Global */
+/* =================================================================
+   MEDIA QUERIES - Responsive Design
+   ================================================================= */
 
 @media only screen and (min-width: 768px) {
     .main {
         max-width: 64rem;
-        margin: 1rem auto;
+        margin: var(--spacing-md) auto;
     }
 }
