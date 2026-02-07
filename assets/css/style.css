@@ -209,6 +209,8 @@
 /* Soft Skills */
 
 #skills .content .soft-skills {
+    display: flex;
+    flex-direction: column;
     padding-bottom: var(--spacing-sm);
     list-style: none;
     padding-left: 0;
