@@ -1,0 +1,12 @@
+LISTA DE SUPERMERCADO
+=====================
+
+Pendentes:
+☐ Café 3 Corações Extra-Forte - R$ 40.00
+☐ Pão suiço - R$ 5.00
+
+Comprados:
+Nenhum item comprado
+
+
+TOTAL: R$ 45.00
