@@ -202,8 +202,9 @@
     border-radius: var(--radius-sm);
     width: 3rem;
     height: 3rem;
-    padding: 0.25rem;
-    background-color: rgba(221, 218, 218, 0.82);
+    padding: 0.30rem;
+    margin-right: 2.7rem;
+    background-color: rgba(221, 218, 218, 0.781);
 }
 
 /* Soft Skills */
@@ -225,6 +226,22 @@
 #skills .content .soft-skills li i {
     color: rgb(255, 251, 251);
     flex-shrink: 0;
+}
+
+.images-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: var(--radius-sm);
+    padding: 0.30rem;
+    
+}
+
+.skills-icons p {
+    position: relative;
+    margin-left: 0.5rem;
+    margin-top: var(--spacing-xs);
+    font-size: 0.875rem;
+    color: var(--text-secondary);
 }
 
 /*  LANGUAGES SECTION  */
@@ -355,7 +372,7 @@
 
 .portfolio-item {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: var(--spacing-md);
     align-items: center;
     padding: var(--spacing-sm);
@@ -421,8 +438,8 @@
 }
 
 .experience-list {
-    list-style: none;
     padding-left: 0;
+    margin-right: 1rem;
 }
 
 .experience-item {
@@ -434,14 +451,15 @@
     border-radius: var(--radius-sm);
     border: 1px solid transparent;
     transition: border-color var(--transition-fast), background-color var(--transition-fast);
+    list-style-type: disc;
 }
 
-.experience-item p{
-    color: var(--text-color);
-    line-height: 1.5;
-    font-size: 1rem;
-    text-align: center;
+.sub-item {
+    margin-left: 1.5rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
 }
+
 
 .experience-item h4 {
     font-weight: var(--font-weight-semibold);
@@ -516,3 +534,4 @@
         max-width: 20rem;
     }
 }
+
