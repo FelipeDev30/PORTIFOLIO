@@ -330,6 +330,12 @@
     margin-bottom: var(--spacing-xs);
 }
 
+#education-content h2 {
+    margin-bottom: 1.5rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-color);
+}
+
 /* Portfolio Styles */
 #portfolio {
     background: var(--surface-dark);
@@ -432,6 +438,7 @@
     color: var(--text-color);
     line-height: 1.5;
     font-size: 1rem;
+    text-align: center;
 }
 
 .experience-item h4 {
